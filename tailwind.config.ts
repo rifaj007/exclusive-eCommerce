@@ -1,10 +1,15 @@
 import type { Config } from "tailwindcss";
+import { heroui } from "@heroui/react";
 
 export default {
+  corePlugins: {
+    container: false,
+  },
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -22,6 +27,10 @@ export default {
           1: "var(--text-1)",
           2: "var(--text-2)",
           3: "var(--text-3)",
+        },
+        border: {
+          1: "var(--border-1)",
+          2: "var(--border-2)",
         },
         neutral: {
           0: "var(--neutral-0)",
@@ -136,5 +145,6 @@ export default {
       },
     },
   },
-  plugins: [],
+  darkMode: "class",
+  plugins: [heroui()],
 } satisfies Config;

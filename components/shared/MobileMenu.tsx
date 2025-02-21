@@ -1,8 +1,7 @@
-import { NavbarMenu, NavbarMenuItem } from "@heroui/react"
 
 const MobileMenu = () => {
   return (
-    <NavbarMenu>
+    <ul>
     {navItems.map((item, index) => (
       <NavbarMenuItem key={`${item}-${index}`}>
         <Link
@@ -21,7 +20,7 @@ const MobileMenu = () => {
         </Link>
       </NavbarMenuItem>
     ))}
-  </NavbarMenu>
+  </ul>
   )
 }
 

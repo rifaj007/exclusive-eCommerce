@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { inter, poppins } from "./font";
-import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "Exclusive - Best Online Shopping",
@@ -20,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${poppins.variable} antialiased`}>
-        {<Providers>{children}</Providers>}
+        {children}
       </body>
     </html>
   );

@@ -111,10 +111,6 @@
   --error-900: #881337;
 }
 
-@theme {
-  --breakpoint-xl: 1170px;
-}
-
 @layer base {
   * {
     @apply box-border list-none p-0 m-0 !scroll-smooth;
@@ -159,11 +155,11 @@
 
 @layer components {
   .container {
-    @apply w-full mx-auto xl:max-w-[1170px];
+    @apply w-full mx-auto px-3 sm:px-0 overflow-hidden sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px];
   }
 
   .logo {
-    @apply font-inter text-2xl leading-6 font-bold;
+    @apply font-inter text-xl md:text-2xl leading-6 font-bold;
   }
 }
 

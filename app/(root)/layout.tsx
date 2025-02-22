@@ -9,7 +9,7 @@ export default function RootLayout({
   return (
     <>
       <Header />
-      <main className="font-inter text-">This is Layout page{children}</main>
+      <main className="pt-24">{children}</main>
       <Footer />
     </>
   );

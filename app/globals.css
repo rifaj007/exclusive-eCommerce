@@ -159,7 +159,11 @@
   }
 
   .logo {
-    @apply font-inter text-xl md:text-2xl leading-6 font-bold;
+    @apply font-inter text-xl md:text-2xl leading-none font-bold;
+  }
+
+  .footer-heading {
+    @apply text-xl font-medium text-text-1 mb-6;
   }
 }
 
